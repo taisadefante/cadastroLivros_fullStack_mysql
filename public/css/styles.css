@@ -1,9 +1,27 @@
 * {
   font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  border-bottom: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  margin-left: 1em;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .form {
@@ -40,4 +58,13 @@ h1 {
 
 .bold {
   font-weight: bold;
+}
+
+/* BOOK */
+#book-page {
+  padding: 2em;
+}
+
+#book-page .container {
+  text-align: center;
 }
