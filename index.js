@@ -104,6 +104,20 @@ app.post("/books/updatebook", function (req, res) {
   });
 });
 
+app.post("/books/remove/:id", function (req, res) {
+  const id = req.params.id;
+
+  const query = `DELETE FROM books WHERE id = ${id}`;
+
+  conn.query(query, function (err) {
+    if (err) {
+      console.log(err);
+    }
+
+    res.redirect(`/books`);
+  });
+});
+
 const conn = mysql.createConnection({
   host: "localhost",
   user: "root",
