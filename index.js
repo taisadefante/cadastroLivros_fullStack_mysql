@@ -88,6 +88,22 @@ app.get("/books/edit/:id", function (req, res) {
   });
 });
 
+app.post("/books/updatebook", function (req, res) {
+  const id = req.body.id;
+  const title = req.body.title;
+  const pageqty = req.body.pageqty;
+
+  const query = `UPDATE books SET title = '${title}', pageqty = ${pageqty} WHERE id = ${id}`;
+
+  conn.query(query, function (err) {
+    if (err) {
+      console.log(err);
+    }
+
+    res.redirect(`/books/edit/${id}`);
+  });
+});
+
 const conn = mysql.createConnection({
   host: "localhost",
   user: "root",

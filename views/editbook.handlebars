@@ -1,5 +1,5 @@
-<h1>Cadastre o seu livro:</h1>
-<form class="form" action="/books/insertbook" method="POST">
+<h1>Edite o seu livro:</h1>
+<form class="form" action="/books/updatebook" method="POST">
   <input type="hidden" name="id" value="{{book.id}}">
   <div class="form-control">
     <label for="title">Título:</label>
@@ -9,5 +9,5 @@
     <label for="pageqty">Número de páginas:</label>
     <input type="number" name="pageqty" placeholder="Quantas páginas o livro tem?" value="{{book.pageqty}}">
   </div>
-  <input type="submit" value="Cadastrar">
+  <input type="submit" value="Editar">
 </form>
