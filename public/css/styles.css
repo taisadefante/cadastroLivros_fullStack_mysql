@@ -2,15 +2,6 @@
   font-family: Helvetica, sans-serif;
 }
 
-div {
-  background-color: rgb(96, 101, 101);
-  max-width: 600px;
-  margin: 0 auto 300px;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
 h1 {
   text-align: center;
 }
@@ -33,4 +24,20 @@ h1 {
 
 .form-control input {
   padding: 5px;
+}
+
+/* BOOKS */
+.books-container {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.books-container div {
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+}
+
+.bold {
+  font-weight: bold;
 }
